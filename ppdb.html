@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDB MTs Raudlatul Jannah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logomtsrj.png" alt="Logo MTs Raudlatul Jannah">
+                    <h1>MTs Raudlatul Jannah</h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Profil <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Sejarah</a>
+                            <a href="#">Visi & Misi</a>
+                            <a href="#">Fasilitas</a>
+                            <a href="#">Struktur Organisasi</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Akademik <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Kurikulum</a>
+                            <a href="#">Mata Pelajaran Unggulan</a>
+                            <a href="#">Prestasi Akademik</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Kesiswaan <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Ekstrakurikuler</a>
+                            <a href="#">Organisasi Siswa</a>
+                            <a href="#">Prestasi Non-Akademik</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Berita & Kegiatan</a></li>
+                    <li><a href="#">Galeri</a></li>
+                    <li><a href="ppdb.html" class="active">PPDB</a></li> <li><a href="#">Kontak</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="form-section" style="padding: 80px 0; background-color: var(--bg-light);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 40px; color: var(--secondary-color);">Formulir Pendaftaran Siswa Baru</h2>
+                <p style="text-align: center; margin-bottom: 30px; color: var(--text-light); max-width: 700px; margin-left: auto; margin-right: auto;">Silakan lengkapi formulir di bawah ini untuk mendaftarkan putra/putri Anda di MTs Raudlatul Jannah. Pastikan semua data terisi dengan benar.</p>
+
+                <form action="#" method="POST" class="main-form">
+                    <div class="form-group">
+                        <label for="nama_lengkap">Nama Lengkap Calon Siswa <span class="required">*</span></label>
+                        <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Masukkan nama lengkap" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tempat_lahir">Tempat Lahir <span class="required">*</span></label>
+                        <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Contoh: Jember" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tanggal_lahir">Tanggal Lahir <span class="required">*</span></label>
+                        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jenis_kelamin">Jenis Kelamin <span class="required">*</span></label>
+                        <select id="jenis_kelamin" name="jenis_kelamin" required>
+                            <option value="">Pilih Jenis Kelamin</option>
+                            <option value="laki-laki">Laki-laki</option>
+                            <option value="perempuan">Perempuan</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alamat">Alamat Lengkap <span class="required">*</span></label>
+                        <textarea id="alamat" name="alamat" rows="4" placeholder="Masukkan alamat lengkap dengan RT/RW dan Kelurahan/Desa" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asal_sekolah">Asal Sekolah Sebelumnya</label>
+                        <input type="text" id="asal_sekolah" name="asal_sekolah" placeholder="Contoh: SD Negeri 1 Jember">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nama_ayah">Nama Ayah <span class="required">*</span></label>
+                        <input type="text" id="nama_ayah" name="nama_ayah" placeholder="Nama lengkap Ayah" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nama_ibu">Nama Ibu <span class="required">*</span></label>
+                        <input type="text" id="nama_ibu" name="nama_ibu" placeholder="Nama lengkap Ibu" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="no_hp_ortu">Nomor Telepon Orang Tua <span class="required">*</span></label>
+                        <input type="tel" id="no_hp_ortu" name="no_hp_ortu" placeholder="Contoh: 081234567890" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email_ortu">Email Orang Tua (Opsional)</label>
+                        <input type="email" id="email_ortu" name="email_ortu" placeholder="Contoh: nama@example.com">
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="setuju_syarat" name="setuju_syarat" required>
+                        <label for="setuju_syarat">Saya menyetujui <a href="#">syarat dan ketentuan pendaftaran</a> <span class="required">*</span></label>
+                    </div>
+
+                    <button type="submit" class="btn btn-lg-primary">Daftar Sekarang</button>
+                </form>
+            </div>
+        </section>
+        </main>
+
+    <<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h4>Tentang MTs Raudlatul Jannah</h4>
+                <p>MTs Raudlatul Jannah adalah lembaga pendidikan Islam yang berdedikasi untuk menciptakan generasi berakhlak mulia dan berprestasi.</p>
+                <a href="index.html" class="footer-logo-link">
+                    <img src="assets/images/logomtsrj.png" alt="Logo MTs Raudlatul Jannah">
+                </a>
+            </div>
+            <div class="footer-links">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="#">Visi & Misi</a></li>
+                    <li><a href="#">Galeri</a></li>
+                    <li><a href="ppdb.html">PPDB</a></li>
+                    <li><a href="#">Berita & Kegiatan</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Hubungi Kami</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Contoh No. 123, Jember, Jawa Timur</p>
+                <p><i class="fas fa-phone"></i> (0331) 123456</p>
+                <p><i class="fas fa-envelope"></i> info@mtsraudlatuljannah.sch.id</p>
+            </div>
+            <div class="footer-social">
+                <h4>Ikuti Kami</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MTs Raudlatul Jannah. Hak Cipta Dilindungi.</p>
+        </div>
+    </div>
+</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
